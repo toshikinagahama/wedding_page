@@ -53,29 +53,6 @@ export default function Page_WeddingInfomation() {
                   <td>13:00</td>
                   <td></td>
                 </tr>
-                {/* <tr>
-                <td colspan="4" className="text-center pt-8">
-                  場所
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">挙式/吉田神社</td>
-              </tr>
-              <tr>
-                <td colspan="4">京都府京都市左京区吉田神楽岡町30</td>
-              </tr>
-              <tr>
-                <td colspan="4">075-771-3788</td>
-              </tr>
-              <tr>
-                <td colspan="4">披露宴/東観荘</td>
-              </tr>
-              <tr>
-                <td colspan="4">京都府京都市左京区吉田神楽岡町30</td>
-              </tr>
-              <tr>
-                <td colspan="4">075-771-3788</td>
-              </tr> */}
               </tbody>
             </table>
           </div>
