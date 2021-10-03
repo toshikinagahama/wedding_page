@@ -84,7 +84,7 @@ export default function Page_FromUs() {
         <div className="m-8"></div>
       </div>
 
-      <div className="flex flex-col justify-start items-center m-auto">
+      <div className="flex flex-col justify-start items-center max-w-md m-auto">
         <hr className="border-gray-600 w-9/12" />
         <div className="mb-4">
           <div className="mt-4"></div>
