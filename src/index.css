@@ -1,13 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap");
+
+:root {
+  --color-primary: #5c6ac4;
+  --color-secondary: #ecc94b;
+  /* ... */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Kaisei HarunoUmi", serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(250, 250, 250, 1);
+  background-image: radial-gradient(
+      closest-side,
+      transparent 99.9%,
+      rgba(236, 236, 236, 0.8) 100%
+    ),
+    radial-gradient(
+      closest-side,
+      transparent 99.9%,
+      rgba(236, 236, 236, 0.8) 100%
+    );
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
