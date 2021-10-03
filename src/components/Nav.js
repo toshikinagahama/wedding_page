@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
-  const [selectedPage, setSelectedPage] = useState(0); //0 -> info, 1 -> fromus, 2 -> guest_info
+  const [selectedPage, setSelectedPage] = useState(1); //0 -> info, 1 -> fromus, 2 -> guest_info
 
   return (
     <div className="w-full bg-primary h-auto text-white pl-4 pr-4 pt-4 ">
-      <div className="flex flex-row justify-between max-w-md items-center m-auto">
+      <div className="flex flex-row justify-center max-w-md items-center m-auto">
         <Link
           to="/info"
           onClick={() => {
@@ -16,8 +16,9 @@ export default function Nav() {
         >
           ご案内
         </Link>
+        <div className="mx-8"></div>
         <Link
-          to="/fromus"
+          to="/"
           onClick={() => {
             setSelectedPage(1);
           }}
@@ -25,7 +26,7 @@ export default function Nav() {
         >
           新郎新婦紹介
         </Link>
-        <Link
+        {/* <Link
           to="/guest_info"
           onClick={() => {
             setSelectedPage(2);
@@ -33,7 +34,7 @@ export default function Nav() {
           className={selectedPage == 2 ? "p-2 border-b-4 border-white" : "p-2"}
         >
           ゲスト紹介
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

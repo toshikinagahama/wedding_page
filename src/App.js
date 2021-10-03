@@ -6,15 +6,15 @@ import Page_GuestInfomation from "./components/Page_GuestInfomation";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="wedding">
       <div>
         <Nav />
         <Switch>
+          <Route exact path="/">
+            <Page_FromUs />
+          </Route>
           <Route path="/info">
             <Page_WeddingInfomation />
-          </Route>
-          <Route path="/fromus">
-            <Page_FromUs />
           </Route>
           <Route path="/guest_info">
             <Page_GuestInfomation />
